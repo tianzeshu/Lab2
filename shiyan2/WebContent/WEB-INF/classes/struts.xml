@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.devMode" value="true" />
+   <package name="shiyan2" extends="struts-default">
+      <action name="ISBN" class="shiyan2.SearchByISBNAction" method="execute">
+            <result name="success">/book.jsp</result>
+      </action>
+      <action name="author" class="shiyan2.SearchByAuthorAction" method="execute">
+            <result name="success">/author.jsp</result>
+      </action>
+      <action name="AllBook" class="shiyan2.AllBook" method="execute">
+            <result name="success">/main.jsp</result>
+      </action>
+      <action name="delete" class="shiyan2.Delete" method="execute">
+            <result name="success">/delete.jsp</result>
+      </action>
+      <action name="addbook" class="shiyan2.Addbook" method="execute">
+            <result name="success">/AddBook.jsp</result>
+      </action>
+      <action name="addauthor" class="shiyan2.Addauthor" method="execute">
+            <result name="success">/AddAuthor.jsp</result>
+      </action>
+   </package>
+</struts>
